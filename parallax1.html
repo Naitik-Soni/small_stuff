@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="paralax1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax sun</title>
+</head>
+
+<body id="bdy">
+    <div class="container">
+        <!--<h1 id="hh"></h1>-->
+        <div class="sun" id="suns"></div>
+        <img src="tree-front.png" alt="" width="100%" height="auto" class="treeFront">
+    </div>
+
+    <script>
+        let sunny = document.getElementById('suns');
+        //let hh = document.getElementById("hh");
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            //hh.innerHTML = value;
+            if(value <= 713.59){
+                sunny.style.display = 'block';
+                sunny.style.top = (35 + value * 0.20) + "%";
+            }
+            else{
+                sunny.style.display = 'none';
+            }
+            
+
+        });
+    </script>
+</body>
+
+</html>

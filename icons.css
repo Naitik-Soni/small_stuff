@@ -1,0 +1,29 @@
+body{
+	background-color: #ECF0F3;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.container{
+	display: inline-flex;
+	letter-spacing: 5px;
+	height: auto;
+}
+button{
+	cursor: pointer;
+	padding: 50px 60px;
+	font-size: 40px;
+	background-color: cyan;
+	margin: 0 20px;
+	border-radius: 15px;
+	background-color: #ECF0F3;
+	box-shadow: 5px 5px 10px #D1D9E6, -5px -5px 10px #FFF;
+	width: 200px;
+	text-align: center;
+	border:none;
+	color: grey;
+	outline: none;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form 10</title>
+	<link rel="stylesheet" type="text/css" href="Form_10.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  		crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="4
+  		crossorigin="anonymous"></script>
+</head>
+<body>
+	<button id="button" onclick="ShowForm()">Show</button>
+	<div id="container">
+		<button id="cross" onclick="HideForm()">&#10006</button>
+		<h1>Login</h1>
+		<form method="POST" action="http://localhost/PHP_sample/Form10.php">
+			<input type="text" name="name" placeholder="Username"><br><br>
+			<input type="password" name="password" placeholder="Password"><br><br>
+			<input type="submit" name="" value="LOGIN">
+		</form>
+	</div>
+	<script type="text/javascript">
+		function ShowForm(){
+			$("#button").hide();
+			$("#container").show();
+		}
+		function HideForm(){
+			$("#button").show();
+			$("#container").hide();
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stop Watch</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgb(20,20,20);
+			min-height: 90vh;
+		}
+		#Swatch{
+			width: 250px;
+			height: 100px;
+			border: 3px solid white;
+			font-size: 45px;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: verdana;
+		}
+		button{
+			width: 90px;
+			font-family: verdana;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 40px;
+			border: none;
+			background-color: white;
+			font-size: 20px;
+		}
+		#container{
+			text-align: center;
+			display: table-column;
+			width: 320px;
+			margin-left: 12px;
+			max-width: 90%;
+		}
+		#operation{
+			display: flex;
+			box-sizing: border-box;
+		}
+		h1{
+			color: white;
+			font-family: candara;
+			margin-right: 45px;
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>Stop watch</h1>
+		<div id="Swatch"></div><br><br>
+		<div id="operation">
+			<button onclick="StartClock()" id="start">Start</button>&nbsp
+			<button onclick="Stop()" id="stop">Stop</button>&nbsp
+			<button onclick="Reset()" id="reset">Reset</button>&nbsp
+		</div>
+	</div>
+	<script type="text/javascript">
+		var min = 0;
+		var sec = 0;
+		var ms = 0;
+		var myVar;
+		if(min<10){min="0"+min;}
+		if(sec<10){sec="0"+sec;}
+		if(ms<10){ms="0"+ms;}
+		document.getElementById('Swatch').innerHTML = min + ":" + sec + ":" + ms;
+		function Start(){
+			ms++;
+			if(ms==100){
+				ms=0;
+				sec++;
+			}
+			if(ms<10){
+				ms="0"+ms;
+			}
+			if(ms==0 && sec<10){
+				sec="0"+sec;
+			}
+			if(sec==60){
+				sec=0;
+				min++;
+			}
+			if(sec==0 && min<10){
+				//min="0"+min;
+			}
+			document.getElementById('Swatch').innerHTML = min + ":" + sec + ":" + ms;
+		}
+		function StartClock(){
+			myVar = setInterval(Start, 10);
+		}
+		function Stop(){
+			clearInterval(myVar);
+		}
+		function Reset(){
+			clearInterval(myVar);
+			min=0;
+			sec=0;
+			ms=0;
+			if(min<10){min="0"+min;}
+			if(sec<10){sec="0"+sec;}
+			if(ms<10){ms="0"+ms;}
+			document.getElementById('Swatch').innerHTML = min + ":" + sec + ":" + ms;
+		}
+	</script>
+</body>
+</html>

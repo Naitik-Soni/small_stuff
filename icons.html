@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>Icons</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  		crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  		crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+			<button class="button" id="call" onclick="changeicon()">
+				<i class="fas fa-wifi"></i>
+			</button>
+			<button class="button" id="call1" onclick="changeicon1()">
+				<i class="fab fa-bluetooth-b"></i>
+			</button>
+			<button class="button" onclick="changeicon2()" id="call2">
+				<i class="fas fa-plane"></i>
+			</button>
+			<button class="button" onclick="changeicon3()" id="call3">
+				<i class="fas fa-map-marker-alt"></i>
+			</button>
+	</div>
+
+	<script type="text/javascript">
+		var count=0;
+		var count1=0;
+		var count2=0;
+		var count3=0;
+		function changeicon(){
+			if(count%2==1){
+				$("#call").css("color","grey");
+				$("#call").css("box-shadow"," 5px 5px 10px #D1D9E6, -5px -5px 10px #FFF");
+				count++;
+			}
+			else{
+				$("#call").css("box-shadow"," inset 5px 5px 10px #D1D9E6, inset -5px -5px 10px #FFF");
+				$("#call").css("color","dodgerblue");
+				count++;
+			}
+		}
+		function changeicon1(){
+			if(count1%2==1){
+				$("#call1").css("color","grey");
+				$("#call1").css("box-shadow"," 5px 5px 10px #D1D9E6, -5px -5px 10px #FFF");
+				count1++;
+			}
+			else{
+				$("#call1").css("box-shadow"," inset 5px 5px 10px #D1D9E6, inset -5px -5px 10px #FFF");
+				$("#call1").css("color","gold");
+				count1++;
+			}
+		}
+		function changeicon2(){
+			if(count2%2==1){
+				$("#call2").css("color","grey");
+				$("#call2").css("box-shadow"," 5px 5px 10px #D1D9E6, -5px -5px 10px #FFF");
+				count2++;
+			}
+			else{
+				$("#call2").css("box-shadow"," inset 5px 5px 10px #D1D9E6, inset -5px -5px 10px #FFF");
+				$("#call2").css("color","lawngreen");
+				count2++;
+			}
+		}
+		function changeicon3(){
+			if(count3%2==1){
+				$("#call3").css("color","grey");
+				$("#call3").css("box-shadow"," 5px 5px 10px #D1D9E6, -5px -5px 10px #FFF");
+				count3++;
+			}
+			else{
+				$("#call3").css("box-shadow"," inset 5px 5px 10px #D1D9E6, inset -5px -5px 10px #FFF");
+				$("#call3").css("color","orangered");
+				count3++;
+			}
+		}
+	</script>
+</body>
+</html>

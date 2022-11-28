@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Parallax.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <img src="sky.png" alt="" width="100%" class="one">
+        <h1 id="name">NAITIK</h1>
+        <img src="mountain.png" alt="" width="100%" class="two">
+    </div>
+    <div class="paragraph">
+        <h2>Hello this is peter</h2><br><br>
+        <pre>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Unde autem corrupti, rem ducimus voluptates eos consectetur 
+numquam laboriosam obcaecati corporis, voluptatibus repellendus 
+quisquam deserunt esse quod possimus. Saepe, tempore vitae.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Unde autem corrupti, rem ducimus voluptates eos consectetur 
+numquam laboriosam obcaecati corporis, voluptatibus repellendus 
+quisquam deserunt esse quod possimus. Saepe, tempore vitae.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Unde autem corrupti, rem ducimus voluptates eos consectetur 
+numquam laboriosam obcaecati corporis, voluptatibus repellendus 
+quisquam deserunt esse quod possimus. Saepe, tempore vitae.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Unde autem corrupti, rem ducimus voluptates eos consectetur 
+numquam laboriosam obcaecati corporis, voluptatibus repellendus 
+quisquam deserunt esse quod possimus. Saepe, tempore vitae.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Unde autem corrupti, rem ducimus voluptates eos consectetur 
+numquam laboriosam obcaecati corporis, voluptatibus repellendus 
+quisquam deserunt esse quod possimus. Saepe, tempore vitae.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Unde autem corrupti, rem ducimus voluptates eos consectetur 
+numquam laboriosam obcaecati corporis, voluptatibus repellendus 
+quisquam deserunt esse quod possimus. Saepe, tempore vitae.
+        </pre>
+        <footer><p>@copyright Naitik Soni</p></footer>
+    </div>
+
+    <script>
+        let name = document.getElementById("name");
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            name.style.left = (30 + value*0.2) + "%";
+            name.style.top = (50 - value*0.2) + "%";
+        });
+    </script>
+</body>
+</html>

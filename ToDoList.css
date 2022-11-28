@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(45deg, cyan, lawngreen);
+	width: 100%;
+}
+
+.Direction {
+	width: 100%;
+	background-color: white;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.Direction p {
+	font-family: candara;
+	font-size: 18px;
+	color: rgb(40, 40, 40);
+	letter-spacing: 1px;
+}
+
+.Direction p span {
+	font-weight: bold;
+}
+
+.List {
+	background-color: rgba(255, 255, 255, 0.4);
+	width: 98%;
+	width: auto;
+	display: block;
+	margin: 20px 20px;
+	border-radius: 20px;
+	padding: 30px 30px;
+	line-height: 42px;
+}
+
+.List input[type="text"] {
+	width: 250px;
+	outline: none;
+	border: 1px solid grey;
+	height: 28px;
+	background-color: white;
+	font-family: consolas;
+	font-size: 18px;
+	padding-left: 10px;
+}
+
+.List input[type="checkbox"] {
+	background-color: cyan;
+	height: 20px;
+	width: 50px;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+
+.List input[type="checkbox"]:checked {
+	margin-left: 72%;
+	background-color: blue;
+}

@@ -1,0 +1,79 @@
+body{
+	background-color: rgb(0,255,150);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 90vh;
+}
+.container{
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFfpYszgF53nwsN25UJXpQm3V7uqB3XJ34aA&usqp=CAU);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	width: 320px;
+	text-align: center;
+}
+.back{
+	padding-top: 20px;
+	background-color: rgba(0,0,0,0.6);
+	justify-content: center;
+	align-items: center;
+	height: 380px;
+	width: 320px;
+}
+input{
+	outline: none;
+	border: none;
+	border-bottom: 2px solid white;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	width: 240px;
+	font-family: candara;
+	font-size: 16px;
+	background-color: transparent;
+	color: white;
+	transition: 0.5s;
+}
+input:focus{
+	border-bottom: 2px solid rgb(0,255,150);
+}
+::placeholder{
+	color:white;
+}
+.terms{
+	display: inline-flex;
+	font-size: 12px;
+	float: right;
+	padding-right: 35px;
+}
+h1{
+	font-family: candara;
+	color: white;
+}
+span{color: rgb(0,255,150); font-family: candara;}
+.account{color: white;}
+input[type="checkbox"]{
+	width: 12px;
+	height: 12px;
+	background-color: rgb(0,0,0);
+	border: 2px solid white;
+	color: rgb(0,255,150);
+}
+input[type="submit"]{
+	background-color: rgb(0,255,150);
+	border: none;
+	border-radius: 30px;
+	font-family: verdana;
+}
+input[type="submit"]:hover{
+	background-color: rgb(0,255,130);
+}
+label{color:white; font-family: candara;}
+a{
+	color: rgb(0,255,150);
+	text-decoration: none;
+}
+.account{
+	float: right;
+	padding-right: 35px;
+}

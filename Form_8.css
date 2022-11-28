@@ -1,0 +1,47 @@
+body{
+	background-image: url(https://i.pinimg.com/originals/06/5d/d8/065dd81b4649d7a74934ff06c4937960.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	min-height: 90vh;
+}
+div{
+	background-color: rgba(0,0,0,0.7);
+	width: 360px;
+	height: 400px;
+	text-align: center;
+	padding-top: 40px;
+	box-shadow: 0 10px 20px black; 
+}
+h1{
+	font-family: candara;
+	color: white;
+}
+::placeholder{color: white;}
+input{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid white;
+	padding: 8px 5px;
+	width: 240px;
+	color: white;
+	font-family: arial;
+}
+input[type="submit"]{
+	color: black;
+	background-color: white;
+	font-family: verdana;
+	z-index: 1;
+}
+p{
+	color: white;
+	font-family: candara;
+}
+a{
+	text-decoration: none;
+	color: yellow;
+	font-family: candara;
+}

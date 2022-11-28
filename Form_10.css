@@ -1,0 +1,60 @@
+body{
+	background-color: #E0E5EC;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	min-height: 90vh;
+}
+#container{
+	background-color: #E0E5EC;
+	box-shadow: -5px -5px 16px #FFFFFF, 5px 5px 16px #A3B1C6;
+	text-align: center;
+	height: 300px;
+	width: 280px;
+	border-radius: 10px;
+	padding-top: 30px;
+	display: none;
+}
+#cross{
+	background: none;
+	color: grey;
+	border: none;
+	float: right;
+	margin-right: 15px;
+	margin-top: -15px;
+	cursor: pointer;
+	font-size: 15px;
+}
+#button{
+	background-color: #E0E5EC;
+	color: black;
+	font-family: verdana;
+	font-size: 20px;
+	width: 200px;
+	height: 50px;
+	outline: none;
+	border: none;
+	box-shadow: -5px -5px 16px #FFFFFF, 5px 5px 16px #A3B1C6;
+	border-radius: 30px;
+	cursor: pointer;
+}
+h1{
+	color: #E0E5EC;
+	font-family: verdana;
+	text-shadow: -3px -3px 5px #A3B1C6, 3px 3px 5px #A3B1C6;
+}
+input{
+	border-radius: 20px;
+	box-shadow: inset -5px -5px 8px #FFFFFF, inset 5px 5px 8px #A3B1C6;
+	outline: none;
+	border: none;
+	width: 200px;
+	background-color: transparent;
+	padding: 10px 10px;
+	text-align: center;
+	font-family: calibri;
+	font-size: 15px;
+}
+input[type="submit"]{
+	box-shadow: -5px -5px 16px #FFFFFF, 5px 5px 16px #A3B1C6;
+}

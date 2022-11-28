@@ -1,0 +1,74 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(315deg, yellow, orange, orangered);
+}
+nav{
+	background: black;
+	max-width: 200px;
+	width: auto;
+	height: 100vh;
+	position: fixed;
+	display: block;
+	overflow: hidden;
+}
+nav .icon img{
+	height: 60px;
+	width: 50px;
+}
+nav .icon{
+	margin: 10px 10px;
+	display: flex;
+}
+nav .icon h2{
+	color: orange;
+	font-family: arial;
+}
+nav ul{
+	list-style-type: none;
+	display: block;
+	font-size: 18px;
+	font-family: candara;
+	width: auto;
+	height: 500px;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	height: 50px;
+	width: 100%;
+	display: flex;
+}
+nav ul li a{
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+	font-family: candara;
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	transition: 0.2s;
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+	margin-left: 8px;
+}
+nav ul li a:hover{
+	background: linear-gradient(90deg, orange, yellow);
+	color: black;
+}
+button{
+	float: right;
+	padding: 3px 3px;
+	border: 2px solid black;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 20px;
+}

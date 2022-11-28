@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+	<link rel="stylesheet" type="text/css" href="todolist2.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="row"> To Do List </h1>
+		<div class="row">
+			<form>
+				<div class="input-group">
+					<input type="text" placeholder="Enter text" id="box">
+				</div>
+				<div class="form-group">
+					<input type="button" value="Add" onclick="add_item()">
+				</div>
+			</form>
+		</div>
+		<div class="row">
+			<h3>Tasks:</h3>
+			<ul id="list_item"></ul>
+		</div>
+		<div class="deleted_row">
+			<h3>Completed tasks:</h3>
+			<ul id="delete_item"></ul>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function add_item(){
+			let item = document.getElementById('box');
+			let list_item = document.getElementById('list_item');
+			if(item.value != ""){
+				let make_li = document.createElement("li");
+				make_li.appendChild(document.createTextNode(item.value));
+				list_item.appendChild(make_li);
+				item.value="";
+				make_li.onclick = function(){
+					delete_item.appendChild(this);
+					this.list_item.removeChild(this);
+				}
+			}
+			else{
+				alert("List item is Empty");
+			}
+		}
+	</script>
+</body>
+</html>

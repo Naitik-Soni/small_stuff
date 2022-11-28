@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 200vh;
+    max-height: 200vh;
+    background-image: linear-gradient(to bottom, #ffaa00 50%, red 65%, darkblue);
+    overflow-x: hidden;
+    scrollbar-color: black white;
+}
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(136, 179, 244) 30%, #ffffaa 50%, #ffaa00 70%);
+}
+.container .sun{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 5px 5px 100px #ffffff;
+    position: absolute;
+    top: 35%;
+    left: 53%;
+}
+.container .treeFront{
+    position: fixed;
+    bottom: 0;
+}
+.container #hh{
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    left: 200px;
+    z-index: 1000;
+}

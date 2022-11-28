@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigation bar</title>
+	<link rel="icon" type="image" href="Sample files\whale.png">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<link rel="stylesheet" type="text/css" href="nav11.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  		crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  		crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<div class="icon">
+			<img src="Sample files\whale.png">&nbsp
+			<h2>Humpback</h2>
+		</div>
+		<ul>
+			<li><a href="#"><i class="fas fa-home"></i>&nbsp<span>Home</span></a></li>
+			<li><a href="#"><i class="fas fa-address-card"></i>&nbsp<span>About</span></a></li>
+			<li><a href="#"><i class="fab fa-servicestack"></i>&nbsp<span>Services</span></a></li>
+			<li><a href="#"><i class="fas fa-blog"></i>&nbsp<span>Blog</span></a></li>
+			<li><a href="#"><i class="fas fa-project-diagram"></i>&nbsp<span>Portfolio</span></a></li>
+			<li><a href="#"><i class="fab fa-stack-exchange"></i>&nbsp<span>Projects</span></a></li>
+			<li><a href="#"><i class="fas fa-address-book"></i>&nbsp<span>Contact</span></a></li>
+		</ul>
+	</nav>
+	<button onclick="hidenav()">
+		<i class="fas fa-bars"></i>
+	</button>
+
+	<script type="text/javascript">
+		var count=0;
+		function hidenav(){
+			if(count%2==0){
+				count++;
+				$("nav ul li span").hide();
+				$(".icon h2").hide();
+				$("nav").css("width","70px");
+			}
+			else{
+				$("nav ul li span").show();
+				$(".icon h2").show();
+				$("nav").css("width","auto");
+				count++;
+			}
+		}
+	</script>
+</body>
+</html>

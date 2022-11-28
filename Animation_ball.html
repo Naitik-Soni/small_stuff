@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<link rel="stylesheet" type="text/css" href="Animation_ball.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  		crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  		crossorigin="anonymous"></script>
+</head>
+<body>
+	<button onclick="Play()">PLAY/PAUSE</button>
+	<div class="circle1" id="play"></div>
+	<div class="circle2" id="play1"></div>
+	<div class="circle3" id="play2"></div>
+	<div class="circle4" id="play3"></div>
+
+	<script type="text/javascript">
+		let count=0;
+		function Play(){
+			if(count%2==1){
+				$("#play").css("animation-play-state","paused");
+				$("#play1").css("animation-play-state","paused");
+				$("#play2").css("animation-play-state","paused");
+				$("#play3").css("animation-play-state","paused");
+				count++;
+			}
+			else{
+				$("#play").css("animation-play-state","running");
+				$("#play1").css("animation-play-state","running");
+				$("#play2").css("animation-play-state","running");
+				$("#play3").css("animation-play-state","running");
+				count++;
+			}
+		}
+	</script>
+</body>
+</html>

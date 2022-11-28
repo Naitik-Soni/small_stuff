@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>feather</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<link rel="stylesheet" type="text/css" href="nav5.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  		crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  		crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>	
+		<div class="icon"><i class="fas fa-feather-alt"></i></div>
+	
+	<button class="responsive" onclick="toggle()">
+		<i class="fas fa-bars"></i>
+		<i class="fas fa-times"></i>
+	</button>
+	<ul>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Projects</a></li>
+		<li><a href="#">Manifesto</a></li>
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Blogs</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</nav>
+	<h1><i>This is a responsive web design</i></h1>
+
+	<script type="text/javascript">
+		var count=0;
+		function toggle(){
+			if(count%2==0){
+				$(".fa-bars").hide();
+				$(".fa-times").show();
+				$("ul").css("left","0px");
+				count++;
+			}
+			else{
+				$(".fa-bars").show();
+				$(".fa-times").hide();
+				$("ul").css("left","-200px");
+				count++;
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+	background-color: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 90vh;
+}
+.container{
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	overflow: visible;
+	width: 300px;
+	height: 320px; 
+}
+.imgclass{
+	width: 100px;
+	height: 100px;
+	margin-top: -50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 100px;
+}
+h1{
+	color: orange;
+	font-family: arial;
+}
+input{
+	width: 200px;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid black;
+	padding: 5px 7px;
+	transition: 0.5s;
+	font-family: candara;
+	font-size: 15px;
+}
+input:focus{
+	border-bottom: 1px solid orange;
+}
+input[type="submit"]{
+	border: none;
+	background: orange;
+	color:white;
+	padding: 6px 6px;
+	width: 220px;
+	transition: 0s;
+}
+input[type="submit"]:hover{
+	background-color: darkorange;
+}
